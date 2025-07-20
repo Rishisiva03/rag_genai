@@ -24,7 +24,7 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build \
-          --file deployment/Dockerfile \
+          --file deployment/DockerFile \
           --build-arg OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
           --build-arg UPLOAD_FOLDER_PATH=${{ secrets.UPLOAD_FOLDER_PATH }} \
           --build-arg AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
