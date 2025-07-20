@@ -22,7 +22,7 @@ jobs:
       run : docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
       
     - name: Build the Docker image
-      run: docker build . --file deployment/DockerFile --tag rishisiva03/raggenai:latest
+      run: docker build . --file deployment/DockerFile --tag rishisiva03/raggenai:$(date +%s)
 
     - name: List Docker Images
       run: docker image ls 
