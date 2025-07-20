@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pymupdf                  
+faiss-cpu                
+sentence-transformers    
+openai                  
+python-dotenv 
+s3fs
+fsspec
+boto3
