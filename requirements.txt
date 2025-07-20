@@ -1,12 +1,13 @@
 fastapi
 uvicorn
-pymupdf                  
-faiss-cpu                
-torch==2.2.2+cpu
-sentence-transformers
---extra-index-url https://download.pytorch.org/whl/cpu   
-openai                  
-python-dotenv 
+pymupdf
+faiss-cpu
+openai
+python-dotenv
 s3fs
 fsspec
 boto3
+
+torch==2.2.2+cpu
+sentence-transformers
+--index-url https://download.pytorch.org/whl/cpu
