@@ -24,5 +24,8 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file deployment/DockerFile --tag rishisiva03/raggenai:$(date +%s)
 
+    - name: List Docker Images
+      run: docker image ls 
+
     - name:  Push to Dockerhub
       run: docker push rishisiva03/raggenai
